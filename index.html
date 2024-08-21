@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es and en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenger</title>
+    <link rel="stylesheet" href="Style/Reset.css">
+    <link rel="stylesheet" href="Style/style.css">
+</head>
+
+<body>
+    <!--ENCABEZADO-->
+    <header class="header">
+        <img src="Assets/Logo.png">
+    </header>
+    <!--CUERPO-->
+    <main class="container">
+        <!--CONTENEDOR 1-->
+        <div class="container1">
+            <textarea type ="text"  onkeyup="remplazar(this)"     class="escritura" id="mensaje1" cols="20" rows="50" placeholder="Ingrese el texto aquí. No se acepta Mayuscula, ni Símbolos" autofocus
+                maxlength="300"></textarea>
+
+
+            <div class="Advertencia">
+                <p class="aviso" id="aviso">solo letras minusculas y sin acento*</p>
+            </div>
+            <!--BOTONES-->
+            <div class="botones">
+                <button class="btn-encriptar" id="encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <button class="btn-desencriptar" type="button" id="desencriptar" value="Desencriptar"
+                    onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <!--CONTENEDOR 2-->
+        <section class="container2">
+            <div class="muñeco_contenedor">
+                <p class="text1" id="text1">Ningun Mensaje fue encontrado</p>
+                <p class="text2" id="text2">Ingrese el texto que desea encriptar o desencriptar</p>
+                <img src="./Assets/Muñeco.png" alt="muñeco" id="mueco" class="texto_nofound">
+            </div>
+            <textarea id="mensaje2" type="Mensaje" class="escritura_2"  maxlength="300"  rows="10" ></textarea>
+            <button class="btn_copiar" id="btn_copiar">Copiar</button>
+       </section>
+    </main>
+    <!--PIE DE PAGINA-->
+    <footer>
+        <div class="firma"> Realizado por Felipe Xavier</div>
+        <a class="github" href="https://github.com/felipexg"><img src="./Assets/github.png"></a>
+        <a class="linkedin"href="https://www.linkedin.com/in/felipe-granados-villarreal/"><img src="./Assets/linkedin.png">
+            </a>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
